@@ -1,6 +1,6 @@
 # guestbook
 
-FIXME
+A comment posting web application written in Clojure. Demonstrating the use of Ring, Compojure, Hiccup and Noir.lib.
 
 ## Prerequisites
 
