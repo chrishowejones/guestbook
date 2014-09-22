@@ -31,6 +31,10 @@
 
 (defn handle-registration [id pass pass1]
   "Store registration details."
+  (rule (has-value? id)
+        [:id "screen name required"])
+  (rule (has-value? pass)
+        [:pass "password required"])
   (rule (= pass pass1)
         [:pass "password was not retyped correctly"])
   (if (errors? :pass)

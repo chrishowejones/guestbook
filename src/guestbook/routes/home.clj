@@ -54,14 +54,3 @@
   (GET "/" [] (home))
   (POST "/" [name message]
         (save-message name message)))
-
-
-
-
-
-
-
-
-
-
-
